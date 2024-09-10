@@ -1,0 +1,261 @@
+:root {
+  --shadow: 6px 4px 7px rgba(0, 0, 0, 0.25);
+  --theme-background-col: rgba(255, 255, 255, 1);
+  --theme-text-col: rgba(0, 0, 0, 1);
+  --theme-link-hover-col: rgba(54, 0, 54, 1);
+  --theme-link-visited-col: rgba(96, 45, 155, 1);
+  --theme-offset-col: rgba(96, 45, 155, 1);
+  --theme-offset-text-col: rgba(255, 255, 255, 1);
+  --theme-offset-link-hover-col: rgba(0, 250, 154, 1);
+  --theme-offset-link-visited-col: rgba(173, 216, 230, 1);
+}
+
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url('./assets/fonts/playfairdisplay-regular-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/playfairdisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('./assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'playfair_displayregular', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--theme-background-col);
+}
+
+img {
+  display: block;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a svg {
+  fill: var(--theme-text-col);
+}
+
+a:visited svg {
+  fill: var(--theme-link-visited-col);
+}
+
+a:hover svg,
+a:active svg {
+  fill: var(--theme-link-hover-col);
+}
+
+/* || HEADER */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-offset-col);
+  transform: skewY(-16deg);
+  transform-origin: top left;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-img {
+  max-width: 400px;
+  position: relative;
+  float: left;
+  box-shadow: var(--shadow);
+}
+
+.header-img-caption {
+  position: absolute;
+  color: var(--theme-offset-text-col);
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  bottom: 1rem;
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+}
+
+.header-about-me {
+  background-color: var(--theme-background-col);
+  padding: 1rem;
+  max-width: 800px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+header .socials {
+  margin-left: auto;
+}
+
+.social-icon {
+  height: auto;
+  width: 30px;
+}
+
+/* || PROJECTS */
+
+.portfolio {
+  padding: 4rem;
+}
+
+.projects {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+}
+
+.tile {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.placeholder {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.project-icon {
+  height: auto;
+  width: 20px;
+}
+
+/* || FOOTER */
+
+footer {
+  padding: 5rem;
+  background-color: var(--theme-offset-col);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme-offset-text-col);
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-me {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 60%;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.footer-img {
+  width: 800px;
+  height: auto;
+}
+
+.action-shot {
+  width: 100%;
+  height: auto;
+}
+
+footer a svg {
+  fill: var(--theme-offset-text-col);
+}
+
+footer a:visited svg {
+  fill: var(--theme-offset-link-visited-col);
+}
+
+footer a:hover svg,
+footer a:active svg {
+  fill: var(--theme-offset-link-hover-col);
+}
