@@ -1,15 +1,23 @@
-# odin-homepage
+# Homepage: A HTML and CSS Project
 
-Capstone project to the Advanced HTML and CSS course hosted by The Odin Project.
+This is the capstone project to the [Advanced HTML and CSS course](https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css) hosted by [The Odin Project](https://www.theodinproject.com/).
+
+Given a set of page images (see [project-designs folder](./project-designs/)), students are tasked with replicating the page design and making the page behave responsively based on the width of the screen. This provides an opportunity to practice using some of the responsive page design techniques covered during the course. Additionally, there is room to practice improving page accessibility and implementing CSS animations if desired.
 
 ## Acknowledgements
 
-Dog with tongue out: Photo by Helena Lopes: https://www.pexels.com/photo/short-coated-black-and-white-dog-on-ground-1938125/
+The following resources have been used as part of this project:
+**Images:**
 
-Dog running through water: Photo by Pixabay: https://www.pexels.com/photo/black-white-long-coated-dog-dashing-trough-body-of-water-37860/
+- Dog with tongue out by Helena Lopes: https://www.pexels.com/photo/short-coated-black-and-white-dog-on-ground-1938125/
+- Dog running through water by Pixabay: https://www.pexels.com/photo/black-white-long-coated-dog-dashing-trough-body-of-water-37860/
 
-SVG - Icons (Git, LinkedIn, X(twitter)): https://devicon.dev/
-SVG - open-in-new-tab: https://pictogrammers.com/library/mdi/icon/open-in-new/
+**SVG's:**
 
-fonts - open sans: https://www.fontsquirrel.com/fonts/open-sans
-fonts - playfair display: https://www.fontsquirrel.com/fonts/playfair-display
+- GitHub, LinkedIn, and X (formerly twitter) Icons: https://devicon.dev/
+- Open-in-new-tab Icon: https://pictogrammers.com/library/mdi/icon/open-in-new/
+
+**Fonts:**
+
+- Open sans: https://www.fontsquirrel.com/fonts/open-sans
+- Playfair display: https://www.fontsquirrel.com/fonts/playfair-display
