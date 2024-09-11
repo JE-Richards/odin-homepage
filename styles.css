@@ -211,7 +211,7 @@ header .socials {
 
 .project-icon {
   height: auto;
-  width: 20px;
+  width: 30px;
 }
 
 /* || FOOTER */
@@ -291,5 +291,53 @@ footer a:active svg {
     top: 1rem;
     bottom: auto;
     text-shadow: var(--shadow);
+  }
+
+  header,
+  .portfolio,
+  footer {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  header,
+  .portfolio {
+    padding: 2rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .header-img {
+    margin-top: 0;
+    transform: translate(0, 0);
+    width: 100%;
+  }
+
+  .header-img-caption {
+    bottom: 1rem;
+    left: auto;
+    top: auto;
+    font-size: 72px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .contact-me {
+    padding-top: 1rem;
+  }
+
+  .footer-img {
+    width: 100%;
   }
 }
